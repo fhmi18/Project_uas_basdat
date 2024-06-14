@@ -3,7 +3,7 @@
 include 'config.php';
 $output = '';
 if (isset($_POST["export"])) {
-     $query = "SELECT * FROM student_data order by 1 desc";
+     $query = "SELECT * FROM data_pasien order by 1 desc";
      $result = mysqli_query($con, $query);
      if (mysqli_num_rows($result) > 0) {
           $output .= '

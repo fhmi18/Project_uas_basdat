@@ -1,13 +1,13 @@
 <?php
 
-include('config.php');
+include ('config.php');
 $id = $_GET['id'];
-$delete = "DELETE FROM student_data WHERE id = $id";
-$run_data = mysqli_query($con,$delete);
+$delete = "DELETE FROM data_pasien WHERE id = $id";
+$run_data = mysqli_query($con, $delete);
 
-if($run_data){
+if ($run_data) {
 	header('location:index.php');
-}else{
+} else {
 	echo "Donot Delete";
 }
 
