@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
 		$msg = "Failed to upload image";
 	}
 
-	$insert_data = "INSERT INTO student_data(u_NIK, u_f_name, u_l_name, u_father, u_ktp, u_birthday, u_gender, u_email, u_phone, u_type, u_hospital, u_village, u_submission, u_mother, status_ajuan,image,uploaded) VALUES ('$u_NIK','$u_f_name','$u_l_name','$u_father','$u_ktp','$u_birthday','$u_gender','$u_email','$u_phone','$u_type','$u_hospital','$u_village','$u_submission','$u_mother','$u_status_ajuan','$image',NOW())";
+	$insert_data = "INSERT INTO data_pasien(u_NIK, u_f_name, u_l_name, u_father, u_ktp, u_birthday, u_gender, u_email, u_phone, u_type, u_hospital, u_village, u_submission, u_mother, status_ajuan,image,uploaded) VALUES ('$u_NIK','$u_f_name','$u_l_name','$u_father','$u_ktp','$u_birthday','$u_gender','$u_email','$u_phone','$u_type','$u_hospital','$u_village','$u_submission','$u_mother','$u_status_ajuan','$image',NOW())";
 	$run_data = mysqli_query($con, $insert_data);
 
 	if ($run_data) {
@@ -125,7 +125,7 @@ if (isset($_POST['submit'])) {
 				</thead>
 				<?php
 
-				$get_data = "SELECT * FROM student_data order by 1 desc";
+				$get_data = "SELECT * FROM data_pasien order by 1 desc";
 				$run_data = mysqli_query($con, $get_data);
 				$i = 0;
 				while ($row = mysqli_fetch_array($run_data)) {
@@ -354,7 +354,7 @@ if (isset($_POST['submit'])) {
 		<!-- Modal -->
 		<?php
 
-		$get_data = "SELECT * FROM student_data";
+		$get_data = "SELECT * FROM data_pasien";
 		$run_data = mysqli_query($con, $get_data);
 
 		while ($row = mysqli_fetch_array($run_data)) {
@@ -392,7 +392,7 @@ if (isset($_POST['submit'])) {
 		<?php
 
 		// <!-- profile pasien modal start -->
-		$get_data = "SELECT * FROM student_data";
+		$get_data = "SELECT * FROM data_pasien";
 		$run_data = mysqli_query($con, $get_data);
 
 		while ($row = mysqli_fetch_array($run_data)) {
@@ -476,7 +476,7 @@ if (isset($_POST['submit'])) {
 
 		<?php
 
-		$get_data = "SELECT * FROM student_data";
+		$get_data = "SELECT * FROM data_pasien";
 		$run_data = mysqli_query($con, $get_data);
 
 		while ($row = mysqli_fetch_array($run_data)) {
