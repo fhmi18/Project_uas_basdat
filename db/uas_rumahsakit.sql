@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Jun 2024 pada 12.25
+-- Waktu pembuatan: 14 Jun 2024 pada 12.56
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `student_data`
+-- Struktur dari tabel `data_pasien`
 --
 
-CREATE TABLE `student_data` (
+CREATE TABLE `data_pasien` (
   `id` int(10) NOT NULL,
   `u_NIK` varchar(12) NOT NULL,
   `u_f_name` text NOT NULL,
@@ -49,10 +49,10 @@ CREATE TABLE `student_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `student_data`
+-- Dumping data untuk tabel `data_pasien`
 --
 
-INSERT INTO `student_data` (`id`, `u_NIK`, `u_f_name`, `u_l_name`, `u_father`, `u_ktp`, `u_birthday`, `u_gender`, `u_email`, `u_phone`, `u_type`, `u_hospital`, `u_village`, `u_submission`, `u_mother`, `status_ajuan`, `image`, `uploaded`) VALUES
+INSERT INTO `data_pasien` (`id`, `u_NIK`, `u_f_name`, `u_l_name`, `u_father`, `u_ktp`, `u_birthday`, `u_gender`, `u_email`, `u_phone`, `u_type`, `u_hospital`, `u_village`, `u_submission`, `u_mother`, `status_ajuan`, `image`, `uploaded`) VALUES
 (107, 'sdfgsdfg', '', '', '', '', '', 'Choose', '', 'sfdgsdfg', 'Choose...', '', '', '', '', '', '', '2021-07-18 12:15:55'),
 (108, 'fsdfgsdfg', 'sdfgsdfgsdfg', 'sdf', 'sdfgsgf', '', '', 'Choose', '', 'sdfgsdfg', 'Choose...', '', '', '', '', '', '', '2021-07-18 12:16:58'),
 (109, 'f546456', 'dsfgsadfg45', 'sdf45g45', 'sdf45g', '', '', 'Choose', '', '564654654', 'Choose...', '', '', '', 'sdfg', '', '', '2021-07-18 12:19:02'),
@@ -172,9 +172,9 @@ INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
 --
 
 --
--- Indeks untuk tabel `student_data`
+-- Indeks untuk tabel `data_pasien`
 --
-ALTER TABLE `student_data`
+ALTER TABLE `data_pasien`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -189,9 +189,9 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT untuk tabel `student_data`
+-- AUTO_INCREMENT untuk tabel `data_pasien`
 --
-ALTER TABLE `student_data`
+ALTER TABLE `data_pasien`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
 
 --
