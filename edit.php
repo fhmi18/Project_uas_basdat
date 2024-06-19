@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
 		$msg = "Failed to upload image";
 	}
 
-	$update = "UPDATE student_data SET u_NIK='$u_NIK', u_f_name = '$u_f_name', u_l_name = '$u_l_name', u_father = '$u_father', u_mother = '$u_mother', u_ktp = '$u_ktp', u_birthday = '$u_birthday', u_gender = '$u_gender', u_email = '$u_email', u_phone = '$u_phone', u_type = '$u_type', u_hospital = '$u_hospital', u_village = '$u_village', u_submission = '$u_submission', status_ajuan = '$u_status_ajuan', image = '$image' WHERE id=$id ";
+	$update = "UPDATE data_pasien SET u_NIK='$u_NIK', u_f_name = '$u_f_name', u_l_name = '$u_l_name', u_father = '$u_father', u_mother = '$u_mother', u_ktp = '$u_ktp', u_birthday = '$u_birthday', u_gender = '$u_gender', u_email = '$u_email', u_phone = '$u_phone', u_type = '$u_type', u_hospital = '$u_hospital', u_village = '$u_village', u_submission = '$u_submission', status_ajuan = '$u_status_ajuan', image = '$image' WHERE id=$id ";
 	$run_update = mysqli_query($con, $update);
 
 	if ($run_update) {

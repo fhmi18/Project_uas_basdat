@@ -36,13 +36,12 @@ if (isset($_POST["export"])) {
                          <td>' . $row["u_f_name"] . $row["u_l_name"] . '</td>  
                          <td>' . $row["u_father"] . '</td>  
                          <td>' . $row["u_mother"] . '</td>  
-                         <td>' . $row["u_Nim"] . '</td>  
+                         <td>' . $row["u_ktp"] . '</td>  
                          <td>' . $row["u_gender"] . '</td> 
                          <td>' . $row["u_birthday"] . '</td>  
                          <td>' . $row["u_email"] . '</td>  
                          <td>' . $row["u_phone"] . '</td> 
-                         <td>' . $row["u_essai"] . '</td>  
-                         <td>' . $row["u_village"] . $row["u_semester"] . $row["u_dist"] . $row["u_state"] . '</td>  
+                         <td>' . $row["u_village"] . $row["u_submission"] . '</td>  
                         <td>' . $row["status_ajuan"] . '</td>  
                         <td>' . $row["uploaded"] . '</td>
                     </tr>
